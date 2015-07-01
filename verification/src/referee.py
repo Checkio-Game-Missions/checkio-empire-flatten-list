@@ -1,4 +1,4 @@
-from checkio_referee import RefereeBase
+from checkio_referee import RefereeBase, ENV_NAME
 
 
 import settings_env
@@ -11,5 +11,5 @@ class Referee(RefereeBase):
 
     DEFAULT_FUNCTION_NAME = "flat_list"
     FUNCTION_NAMES = {
-        "javascript": "flatList"
+        ENV_NAME.JS_NODE: "flatList"
     }
